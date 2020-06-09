@@ -1,0 +1,11 @@
+title: MK1 Documentation
+tagline: Documentation for the MK1 tweak.
+description: Learn about how to utilize MK1's JavaScript API to create your own scripts.
+
+# Build settings
+#theme: minima
+permalink: /:slug
+
+collections:
+  docs:
+    output: true

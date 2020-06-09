@@ -1,0 +1,25 @@
+<div class="sidebar">
+	<div class="header">
+		<h1>
+			<a href="/">{{ site.title }}</a>
+		</h1>
+		<p>{{ site.description }}</p>
+	</div>
+
+	<div class="nav">
+		<a class="link{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a>
+
+		{% assign groups = site.docs | group_by: "category" | sort: "name" %}
+		{% for group in groups %}
+			{% assign items = group.items %}
+			{% for node in items %}
+				{% assign groupName = group.name | slice: 1, 99 %}
+				{% if node.title == groupName %}
+					<a class="section{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+				{%else%}
+					<a class="section-link{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+				{%endif%}
+			{%endfor%}
+		{%endfor%}
+	</div>
+</div>

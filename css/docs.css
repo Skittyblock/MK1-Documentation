@@ -1,0 +1,156 @@
+/*
+ *
+ * Documentation CSS
+ * By Skitty
+ *
+ */
+
+/*
+ * Resets
+ */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+  
+html, body {
+	margin: 0;
+	padding: 0;
+}
+  
+html {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+body {
+	color: #000;
+	background-color: #fff;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+
+/*
+ * Links
+ */
+
+a {
+	color: #268bd2;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	text-decoration: underline;
+}
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+	text-align: center;
+	padding: 2rem 1rem;
+	color: #000;
+	background-color: rgba(0,0,0,.1);
+}
+@media (min-width: 48em) {
+	.sidebar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 18rem;
+		padding: 2rem 1.5rem;
+		text-align: left;
+	}
+}
+
+.sidebar p {
+	margin-top: -20px;
+	color: rgba(0,0,0,.5);
+}
+
+.sidebar .nav {
+	margin-top: 10px;
+}
+
+/* Sidebar links */
+
+.sidebar a {
+	color: #000;
+	display: block;
+}
+
+.sidebar .link {
+	font-weight: bold;
+}
+
+.sidebar .section {
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.sidebar .section-link {
+	color: rgba(0,0,0,.5);
+	margin-left: 20px;
+}
+.sidebar .section-link.active {
+	color: rgba(0,0,0,.7);
+}
+
+
+/*
+ * Content
+ */
+
+.content {
+	padding: 2rem;
+	padding-bottom: 4rem;
+}
+
+@media (min-width: 48em) {
+	.content {
+		max-width: 38rem;
+		margin-left: 19rem;
+		margin-right: 1rem;
+	}
+}
+
+@media (min-width: 64em) {
+	.content {
+		margin-left: 20rem;
+		margin-right: 2rem;
+	}
+}
+
+
+/*
+ * Dark mode
+ */
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #000;
+		color: #fff;
+	}
+	.sidebar {
+		background-color: rgba(255,255,255,.1);
+		color: #fff;
+	}
+	.sidebar p {
+		color: rgba(255,255,255,.5);
+	}
+	.sidebar a {
+		color: #fff;
+	}
+	.sidebar .section-link {
+		color: rgba(255,255,255,.5);
+	}
+	.sidebar .section-link.active {
+		color: rgba(255,255,255,.7);
+	}
+}
