@@ -76,7 +76,6 @@ a:hover, a:focus {
 
 .sidebar .section-link {
 	color: rgba(0,0,0,.5);
-	margin-left: 20px;
 }
 .sidebar .section-link.active {
 	color: rgba(0,0,0,.7);
@@ -84,9 +83,16 @@ a:hover, a:focus {
 
 .sidebar .section-sublink {
 	color: rgba(0,0,0,.4);
-	margin-left: 40px;
 }
 
+@media (min-width: 48em) {
+	.sidebar .section-link {
+		margin-left: 20px;
+	}
+	.sidebar .section-sublink {
+		margin-left: 40px;
+	}
+}
 
 /*
  * Content
@@ -135,6 +141,10 @@ pre.highlight {
 	border: 1px solid rgba(0,0,0,.1);
 	border-radius: 5px;
 	padding: 10px;
+}
+
+code.highlighter-rouge {
+	color: #ff3e5f;
 }
 
 
