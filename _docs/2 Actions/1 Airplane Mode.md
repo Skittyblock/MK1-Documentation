@@ -7,7 +7,7 @@ sublinks: ["airplaneMode.isEnabled()", "airplaneMode.setEnabled()"]
 ---
 
 # Airplane Mode
-## airplaneMode.isEnabled()
+## airplaneMode.isEnabled() ##
 #### Syntax
 ```js
 var enabled = airplaneMode.isEnabled();
@@ -16,7 +16,8 @@ var enabled = airplaneMode.isEnabled();
 #### Return value
 A `Boolean` with the enabled status of airplane mode
 
-## airplaneMode.setEnabled()
+
+## airplaneMode.setEnabled() ##
 #### Syntax
 ```js
 airplaneMode.setEnabled(enabled);

@@ -8,7 +8,7 @@ sublinks: ["alarm.getTitle()", "alarm.getHour()", "alarm.getMinute()", "alarm.is
 
 # Alarms
 
-## alarm.getTitle()
+## alarm.getTitle() ##
 #### Syntax
 ```js
 var title = alarm.getTitle(id);
@@ -20,7 +20,7 @@ var title = alarm.getTitle(id);
 #### Return value
 A `String` containing the alarm title
 
-## alarm.getHour()
+## alarm.getHour() ##
 #### Syntax
 ```js
 var hour = alarm.getHour(id);
@@ -33,7 +33,7 @@ var hour = alarm.getHour(id);
 A `Number` representing the hour of the alarm target time
 
 
-## alarm.getMinute()
+## alarm.getMinute() ##
 #### Syntax
 ```js
 var minute = alarm.getMinute(id);
@@ -46,7 +46,7 @@ var minute = alarm.getMinute(id);
 A `Number` representing the minute of the alarm target time
 
 
-## alarm.isEnabled()
+## alarm.isEnabled() ##
 #### Syntax
 ```js
 var snoozed = alarm.isEnabled(id);
@@ -59,7 +59,7 @@ var snoozed = alarm.isEnabled(id);
 A `Boolean` representing whether or not the alarm is enabled
 
 
-## alarm.isSnoozed()
+## alarm.isSnoozed() ##
 #### Syntax
 ```js
 var snoozed = alarm.isSnoozed(id);
@@ -72,7 +72,7 @@ var snoozed = alarm.isSnoozed(id);
 A `Boolean` representing whether or not the alarm is snoozed
 
 
-## alarm.getNextFireDate()
+## alarm.getNextFireDate() ##
 #### Syntax
 ```js
 var nextFire = alarm.getNextFireDate(id);
@@ -85,7 +85,7 @@ var nextFire = alarm.getNextFireDate(id);
 A `Date` object representing the next time the alarm would be activated
 
 
-## alarm.setHour()
+## alarm.setHour() ##
 #### Syntax
 ```js
 alarm.setHour(id, hour);
@@ -96,7 +96,7 @@ alarm.setHour(id, hour);
 `hour`: A `Number` representing the hour you'd like to set the alarm to
 
 
-## alarm.setMinute()
+## alarm.setMinute() ##
 #### Syntax
 ```js
 alarm.setMinute(id, minute);
@@ -107,7 +107,7 @@ alarm.setMinute(id, minute);
 `minute`: A `Number` representing the minute you'd like to set the alarm to
 
 
-## alarm.setEnabled()
+## alarm.setEnabled() ##
 #### Syntax
 ```js
 alarm.setEnabled(id, enabled);
@@ -118,7 +118,7 @@ alarm.setEnabled(id, enabled);
 `enabled`: A `Boolean` representing whether alarm should be enabled or disabled
 
 
-## alarm.snooze()
+## alarm.snooze() ##
 #### Syntax
 ```js
 alarm.snooze(id);
