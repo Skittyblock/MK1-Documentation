@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Xen HTML Widgets
-category: 1Activation Methods
+category: Activation Methods
 permalink: /activation-methods/xen-widgets
 ---
 
@@ -18,7 +18,7 @@ Scripts can be run and triggers can be activated through the same url scheme the
 MK1 also exposes the `mk1Message()` JavaScript function to your widget. To use, simply call it with the message action and body. To run the example script: `mk1Message("runScript", "Example");`.
 
 ### mk1Callback()
-MK1 also supports scripts the return an expression, however it's limited. First of all, scripts will automatically return whatever the last evaluated expression was. For example:
+MK1 also supports scripts that return an expression, however it's limited. First of all, scripts will automatically return whatever the last evaluated expression was. For example:
 ```js
 if (!lpm.getEnabled()) {
   lpm.setEnabled(true);

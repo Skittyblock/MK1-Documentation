@@ -143,9 +143,21 @@ th, td {
 }
 
 /*
+ * Code
+ */
+
+pre.highlight {
+	background-color: rgba(0,0,0,.05);
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 5px;
+	padding: 10px;
+}
+
+
+/*
  * Dark mode
  */
-/*
+
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #000;
@@ -167,5 +179,11 @@ th, td {
 	.sidebar .section-link.active {
 		color: rgba(255,255,255,.7);
 	}
+	.content p {
+		color: rgba(255,255,255,.7);
+	}
+	pre.highlight {
+		background-color: rgba(255,255,255,.1);
+		border: 1px solid rgba(255,255,255,.15);
+	}
 }
-*/

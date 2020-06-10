@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Actions
-category: 2Actions
+category: Actions
 permalink: /actions
 ---
 

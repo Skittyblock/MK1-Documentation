@@ -1,7 +1,7 @@
 ---
 layout: default
 title: URL Schemes
-category: 1Activation Methods
+category: Activation Methods
 permalink: /activation-methods/url-schemes
 ---
 
@@ -10,9 +10,13 @@ The MK1 application implements URL schemes that allow you to run scripts and act
 Format: `mk1://` + action + argument
 
 ### Run script
-`mk1://runScript/name`
-`name`: script name
+```
+mk1://runScript/name
+```
+**name:** script name
 
 ### Activate trigger
-`mk1://runTrigger/name`
-`name`: trigger name
+```
+mk1://runTrigger/name
+```  
+**name:** trigger name
