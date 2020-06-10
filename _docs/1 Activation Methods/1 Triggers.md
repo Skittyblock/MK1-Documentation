@@ -34,89 +34,97 @@ To set a trigger manually, you'll need to edit the plist located at `/Library/MK
 
 | Trigger | Description |
 |:--|:--|
-| `HWBUTTON-VOLUP` | Volume up button press |
-| `HWBUTTON-VOLDOWN` | Description |
-| `HWBUTTON-VOLUP+VOLDOWN` | Description |
-| `HWBUTTON-POWER` | Description |
-| `HWBUTTON-HOME` | Description |
-| `HWBUTTON-HOME+VOLUP` | Description |
-| `HWBUTTON-HOME+VOLDOWN` | Description |
-| `HWBUTTON-HOME+POWER` | Description |
-| `HWBUTTON-RINGERTOGGLE` | Description |
-| `HWBUTTON-TOUCHID` | Description |
+| `HWBUTTON-VOLUP`         | Volume up press |
+| `HWBUTTON-VOLDOWN`       | Volume down press |
+| `HWBUTTON-VOLUP+VOLDOWN` | Volume up and down press |
+| `HWBUTTON-POWER`         | Power button press |
+| `HWBUTTON-HOME`          | Home button press |
+| `HWBUTTON-HOME+VOLUP`    | Home and volume up press |
+| `HWBUTTON-HOME+VOLDOWN`  | Home and volume down press |
+| `HWBUTTON-HOME+POWER`    | Home and power button press |
+| `HWBUTTON-RINGERTOGGLE`  | Ringer switch |
+| `HWBUTTON-TOUCHID`       | Touch ID press |
 
 ### Status Bar
 
 | Trigger | Description |
 |:--|:--|
-| `STATUSBAR-SINGLETAP` | Description |
-| `STATUSBAR-DOUBLETAP` | Description |
-| `STATUSBAR-LONGPRESS` | Description |
-| `STATUSBAR-SWIPELEFT` | Description |
-| `STATUSBAR-SWIPERIGHT` | Description |
+| `STATUSBAR-SINGLETAP`  | Status bar single tap |
+| `STATUSBAR-DOUBLETAP`  | Status bar double tap |
+| `STATUSBAR-LONGPRESS`  | Status bar long press |
+| `STATUSBAR-SWIPELEFT`  | Status bar swipe from right to left |
+| `STATUSBAR-SWIPERIGHT` | Status bar swipe from left to right |
 
 ### Battery
 
 | Trigger | Description |
 |:--|:--|
-| `BATTERY-STATECHANGE` | Description |
-| `BATTERY-LEVELCHANGE` | Description |
-| `BATTERY-LEVEL20` | Description |
-| `BATTERY-LEVEL50` | Description |
+| `BATTERY-STATECHANGE` | Battery charging state change |
+| `BATTERY-LEVELCHANGE` | Battery level change |
+| `BATTERY-LEVEL50`     | Battery level 50% |
+| `BATTERY-LEVEL20`     | Battery level 20% |
 
 ### Wi-Fi
 
 | Trigger | Description |
 |:--|:--|
-| `WIFI-ENABLED` | Description |
-| `WIFI-DISABLED` | Description |
-| `WIFI-NETWORKCHANGE` | Description |
+| `WIFI-ENABLED`       | Wi-Fi enabled |
+| `WIFI-DISABLED`      | Wi-Fi disabled |
+| `WIFI-NETWORKCHANGE` | Wi-Fi network change |
 
 ### Bluetooth
 
 | Trigger | Description |
 |:--|:--|
-| `BLUETOOTH-CONNECTEDCHANGE` | Description |
+| `BLUETOOTH-CONNECTEDCHANGE` | Bluetooth device connection change |
 
 ### VPN
 
 | Trigger | Description |
 |:--|:--|
-| `VPN-CONNECTED` | Description |
-| `VPN-CONNECTED` | Description |
+| `VPN-CONNECTED`    | VPN enabled |
+| `VPN-DISCONNECTED` | VPN disabled |
 
 ### Device
 
 | Trigger | Description |
 |:--|:--|
-| `APPLICATION-LAUNCH` | Description |
-| `DEVICE-DARKMODETOGGLE` | Description |
-| `DEVICE-SHAKE` | Description |
-| `DEVICE-LOCK` | Description |
-| `DEVICE-UNLOCK` | Description |
+| `APPLICATION-LAUNCH`    | An application is launched |
+| `DEVICE-DARKMODETOGGLE` | Dark mode enabled/disabled |
+| `DEVICE-SHAKE`          | Device is shaken |
+| `DEVICE-LOCK`           | Device is locked |
+| `DEVICE-UNLOCK`         | Device is unlocked |
 
 ### Media
 
 | Trigger | Description |
 |:--|:--|
-| `MEDIA-NOWPLAYINGCHANGE` | Description |
-| `VOLUME-MEDIACHANGE` | Description |
-| `VOLUME-RINGERCHANGE` | Description |
+| `MEDIA-NOWPLAYINGCHANGE` | Music begins playing |
+| `VOLUME-MEDIACHANGE`     | Volume changes |
+| `VOLUME-RINGERCHANGE`    | Ringer switch state changes |
 
 ### Notifications
 
 | Trigger | Description |
 |:--|:--|
-| `NOTIFICATION-RECEIVE` | Description |
+| `NOTIFICATION-RECEIVE` | A notification is recieved |
 
 #### Note
-This trigger also defines JavaScript variables you can use in your script.
+This trigger also defines JavaScript variables you can use in your script.  
+
+| Variable | Description |
+|:--|:--|
+| `NOTIFICATION_HEADER` | Notification header |
+| `NOTIFICATION_TITLE` | Notification title |
+| `NOTIFICATION_MESSAGE` | Notification message |
+| `NOTIFICATION_SUBTITLE` | Notification subtitle |
+| `NOTIFICATION_TOPIC` | Notification topic |
 
 ### Control Center
 
 | Trigger | Description |
 |:--|:--|
-| `CONTROLCENTER-MODULE` | Description |
+| `CONTROLCENTER-MODULE` | The control center toggle is pressed |
 
 #### Note
 This trigger can only be used if the MK1 Control Center toggle package is installed.
