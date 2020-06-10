@@ -10,7 +10,7 @@ sublinks: ["clipboard.get()", "clipboard.set()"]
 ## clipboard.get() ##
 #### Syntax
 ```js
-var clipboard = clipboard.get();
+var clip = clipboard.get();
 ```
 
 #### Return value
