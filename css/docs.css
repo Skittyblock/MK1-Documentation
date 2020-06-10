@@ -57,6 +57,7 @@ a:hover, a:focus {
 	padding: 2rem 1rem;
 	color: #000;
 	background-color: rgba(0,0,0,.1);
+	overflow-y: scroll;
 }
 @media (min-width: 48em) {
 	.sidebar {
@@ -101,6 +102,11 @@ a:hover, a:focus {
 }
 .sidebar .section-link.active {
 	color: rgba(0,0,0,.7);
+}
+
+.sidebar .section-sublink {
+	color: rgba(0,0,0,.4);
+	margin-left: 40px;
 }
 
 
@@ -178,6 +184,9 @@ pre.highlight {
 	}
 	.sidebar .section-link.active {
 		color: rgba(255,255,255,.7);
+	}
+	.sidebar .section-sublink {
+		color: rgba(255,255,255,.4);
 	}
 	.content p {
 		color: rgba(255,255,255,.7);

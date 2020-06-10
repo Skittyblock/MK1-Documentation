@@ -17,6 +17,12 @@
 					<a class="section{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
 				{%else%}
 					<a class="section-link{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+					{% if page.url == node.url and node.sublinks %}
+						{% for sublink in node.sublinks %}
+							{% assign link = sublink | downcase | replace: " ", "-" | remove: "." | remove: "()" %}
+							<a class="section-sublink" href="#{{ link }}">{{ sublink }}</a>
+						{% endfor %}
+					{% endif %}
 				{%endif%}
 			{%endfor%}
 		{%endfor%}

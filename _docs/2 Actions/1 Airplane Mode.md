@@ -3,6 +3,7 @@ layout: default
 title: Airplane Mode
 category: Actions
 permalink: /actions/airplane-mode
+sublinks: ["airplaneMode.isEnabled()", "airplaneMode.setEnabled()"]
 ---
 
 # Airplane Mode
@@ -13,7 +14,7 @@ var enabled = airplaneMode.isEnabled();
 ```
 
 #### Return value
-A `Boolean` with the status of airplane mode.
+A `Boolean` with the enabled status of airplane mode
 
 ## airplaneMode.setEnabled()
 #### Syntax
@@ -22,4 +23,4 @@ airplaneMode.setEnabled(enabled);
 ```
 
 #### Parameters
-`enabled`: A `Boolean` to set airplane mode status
+`enabled`: A `Boolean` to set airplane mode enabled status
