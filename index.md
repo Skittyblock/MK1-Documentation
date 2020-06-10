@@ -5,4 +5,4 @@ permalink: /
 ---
 
 # MK1 Documentation
-Text
+Welcome to the offcial MK1 Documentation! Click on [Getting Started](/getting-started) if you're new.

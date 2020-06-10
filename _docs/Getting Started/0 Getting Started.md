@@ -6,4 +6,4 @@ permalink: /getting-started
 ---
 
 # Getting Started
-Text
+Welcome to the MK1 documentation! To start from the beginning, read the introduction and continue from there.

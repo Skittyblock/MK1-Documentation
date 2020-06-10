@@ -31,6 +31,7 @@ body {
 	background-color: #fff;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+	overflow-x: hidden;
 }
 
 
@@ -110,28 +111,41 @@ a:hover, a:focus {
 .content {
 	padding: 2rem;
 	padding-bottom: 4rem;
+	overflow-x: hidden;
+	word-wrap: break-word;
+	white-space: normal;
 }
 
 @media (min-width: 48em) {
 	.content {
-		max-width: 38rem;
 		margin-left: 19rem;
-		margin-right: 1rem;
+		padding-right: 2rem;
 	}
 }
 
 @media (min-width: 64em) {
 	.content {
 		margin-left: 20rem;
-		margin-right: 2rem;
+		padding-right: 4rem;
 	}
 }
 
+.content p {
+	color: rgba(0,0,0,.7);
+}
+
+/*
+ * Tables
+ */
+
+th, td {
+	padding: 10px;
+}
 
 /*
  * Dark mode
  */
-
+/*
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #000;
@@ -154,3 +168,4 @@ a:hover, a:focus {
 		color: rgba(255,255,255,.7);
 	}
 }
+*/

@@ -3,7 +3,7 @@ tagline: Documentation for the MK1 tweak.
 description: Learn about how to utilize MK1's JavaScript API to create your own scripts.
 
 # Build settings
-#theme: minima
+#markdown: kramdown
 permalink: /:slug
 
 collections:
