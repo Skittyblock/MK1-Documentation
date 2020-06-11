@@ -10,22 +10,22 @@ sublinks: ["MK1.runScript()", "MK1.runTrigger()", "MK1.setAlertOnError()", "MK1.
 ## MK1.runScript() ##
 #### Syntax
 ```js
-MK1.runScript(name);
+MK1.runScript(name, argument);
 ```
 
 #### Parameters
 `name`: A `String` containing the name of the script to run
-
+`argument`: An optional `String` passed into the script and saved in the `MK1_ARG` variable
 
 ## MK1.runTrigger() ##
 #### Syntax
 ```js
-MK1.runTrigger(name);
+MK1.runTrigger(name, argument);
 ```
 
 #### Parameters
 `name`: A `String` containing the name of the trigger to activate
-
+`argument`: An optional `String` passed into each script and saved in the `MK1_ARG` variable
 
 ## MK1.setAlertOnError() ##
 #### Syntax
