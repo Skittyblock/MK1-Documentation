@@ -14,7 +14,7 @@ MK1.runScript(name, argument);
 ```
 
 #### Parameters
-`name`: A `String` containing the name of the script to run
+`name`: A `String` containing the name of the script to run  
 `argument`: An optional `String` passed into the script and saved in the `MK1_ARG` variable
 
 ## MK1.runTrigger() ##
@@ -24,7 +24,7 @@ MK1.runTrigger(name, argument);
 ```
 
 #### Parameters
-`name`: A `String` containing the name of the trigger to activate
+`name`: A `String` containing the name of the trigger to activate  
 `argument`: An optional `String` passed into each script and saved in the `MK1_ARG` variable
 
 ## MK1.setAlertOnError() ##
