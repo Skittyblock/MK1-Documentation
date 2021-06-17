@@ -10,7 +10,7 @@ sublinks: ["volume.getRinger()", "volume.setRinger()", "volume.getMedia()", "vol
 ## volume.getRinger() ##
 #### Syntax
 ```js
-var ringVolume = volume.getLevel();
+var ringVolume = volume.getRinger();
 ```
 
 #### Return value
